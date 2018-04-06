@@ -1,0 +1,5 @@
+[ID: 0277757500]
+run	arithmetic_mean	harmonic_mean	values_discarded
+1	-5.718328e+03	-5.730479e+03	no
+2	-5.718466e+03	-5.729272e+03	no
+all	-5.718394e+03	-5.730048e+03	no

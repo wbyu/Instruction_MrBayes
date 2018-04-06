@@ -1,0 +1,657 @@
+-------------------------- jModeltest 2.1.10 v20160303 --------------------------
+(c) 2011-onwards D. Darriba, G.L. Taboada, R. Doallo and D. Posada,
+(1) Department of Biochemistry, Genetics and Immunology
+    University of Vigo, 36310 Vigo, Spain.
+(2) Department of Electronics and Systems
+    University of A Coruna, 15071 A Coruna, Spain.
+e-mail: ddarriba@udc.es, dposada@uvigo.es
+--------------------------------------------------------------------------------
+ 
+Tue Apr 03 21:29:09 EDT 2018
+Mac OS X 10.12.6, arch: x86_64, bits: 64, numcores: 4
+ 
+--------------------------------------------------------------------------------
+Citation: Darriba D, Taboada GL, Doallo R and Posada D. 2012.
+          "jModelTest 2: more models, new heuristics and parallel computing".
+          Nature Methods 9(8), 772.
+--------------------------------------------------------------------------------
+ 
+jModelTest 2.1.10 v20160303
+Copyright (C) 2011 D. Darriba, G.L. Taboada, R. Doallo and D. Posada
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it under certain
+conditions
+ 
+Notice: This program may contain errors. Please inspect results carefully.
+ 
+ 
+Arguments = -d /Users/wenbin/Desktop/MrBayes_Test/primates.phy -g 4 -i -f -AIC -BIC -a -o modeltest
+
+Reading data file "primates.phy"... OK.
+  number of sequences: 12
+  number of sites: 898
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*        COMPUTATION OF LIKELIHOOD SCORES WITH PHYML          *
+*                                                             *
+---------------------------------------------------------------
+ 
+::Settings::
+ 
+ Phyml version = 3.0
+ Phyml binary = PhyML_3.0_macOS_i386
+ Phyml path = /Users/wenbin/src/jmodeltest-2.1.10/exe/phyml/
+ Candidate models = 24
+   number of substitution schemes = 3
+   including models with equal/unequal base frequencies (+F)
+   including models with/without a proportion of invariable sites (+I)
+   including models with/without rate variation among sites (+G) (nCat = 4)
+ Optimized free parameters (K) = substitution parameters + 21 branch lengths + topology 
+ Base tree for likelihood calculations = ML tree
+ Tree topology search operation = BEST
+ 
+ 
+ 
+::Progress::
+ 
+Model 		 Exec. Time 	 Total Time 	 -lnL
+-------------------------------------------------------------------------
+JC+I+G		00h:00:11:09	00h:00:11:09	    6269.1484	 (1/24)
+F81+I+G		00h:00:14:01	00h:00:14:01	    6103.9552	 (2/24)
+HKY+I+G		00h:00:24:05	00h:00:24:05	    5711.9389	 (3/24)
+K80+I+G		00h:00:14:07	00h:00:26:06	    5950.5768	 (4/24)
+SYM+I+G		00h:00:13:06	00h:00:27:07	    5820.7517	 (5/24)
+F81+G		00h:00:04:07	00h:00:29:02	    6106.1849	 (6/24)
+JC+G		00h:00:04:00	00h:00:33:02	    6272.4691	 (7/24)
+GTR+I+G		00h:00:34:03	00h:00:34:04	    5708.9229	 (8/24)
+HKY+G		00h:00:08:05	00h:00:35:01	    5711.9391	 (9/24)
+F81+I		00h:00:01:09	00h:00:37:00	    6117.4806	 (10/24)
+K80+G		00h:00:05:04	00h:00:38:06	    5950.8734	 (11/24)
+HKY+I		00h:00:02:02	00h:00:39:02	    5768.0040	 (12/24)
+JC+I		00h:00:01:07	00h:00:40:09	    6277.7898	 (13/24)
+SYM+G		00h:00:07:00	00h:00:41:03	    5821.7573	 (14/24)
+K80+I		00h:00:01:08	00h:00:42:07	    5974.9051	 (15/24)
+GTR+I		00h:00:04:02	00h:00:42:08	    5757.2159	 (16/24)
+SYM+I		00h:00:02:00	00h:00:43:03	    5844.3146	 (17/24)
+F81		00h:00:01:04	00h:00:44:02	    6285.1405	 (18/24)
+GTR+G		00h:00:16:08	00h:00:44:05	    5708.9233	 (19/24)
+HKY		00h:00:01:08	00h:00:44:07	    5981.7202	 (20/24)
+JC		00h:00:01:03	00h:00:45:05	    6424.3251	 (21/24)
+GTR		00h:00:02:03	00h:00:45:07	    5934.1469	 (22/24)
+K80		00h:00:01:04	00h:00:45:09	    6142.4291	 (23/24)
+SYM		00h:00:01:05	00h:00:46:01	    5989.3816	 (24/24)
+ 
+   Model = JC
+   partition = 000000
+   -lnL = 6424.3251
+   K = 22 
+ 
+   Model = JC+I
+   partition = 000000
+   -lnL = 6277.7898
+   K = 23
+   p-inv = 0.3570 
+ 
+   Model = JC+G
+   partition = 000000
+   -lnL = 6272.4691
+   K = 23
+   gamma shape = 0.7460 
+ 
+   Model = JC+I+G
+   partition = 000000
+   -lnL = 6269.1484
+   K = 24
+   p-inv = 0.2730
+   gamma shape = 2.5290 
+ 
+   Model = F81
+   partition = 000000
+   -lnL = 6285.1405
+   K = 25
+   freqA = 0.2684 
+   freqC = 0.3038 
+   freqG = 0.1126 
+   freqT = 0.3153  
+ 
+   Model = F81+I
+   partition = 000000
+   -lnL = 6117.4806
+   K = 26
+   freqA = 0.2678 
+   freqC = 0.3205 
+   freqG = 0.1057 
+   freqT = 0.3060 
+   p-inv = 0.3660 
+ 
+   Model = F81+G
+   partition = 000000
+   -lnL = 6106.1849
+   K = 26
+   freqA = 0.2617 
+   freqC = 0.3299 
+   freqG = 0.1045 
+   freqT = 0.3040 
+   gamma shape = 0.6560 
+ 
+   Model = F81+I+G
+   partition = 000000
+   -lnL = 6103.9552
+   K = 27
+   freqA = 0.2629 
+   freqC = 0.3281 
+   freqG = 0.1046 
+   freqT = 0.3044 
+   p-inv = 0.2610
+   gamma shape = 1.8300 
+ 
+   Model = K80
+   partition = 010010
+   -lnL = 6142.4291
+   K = 23
+   kappa = 4.5725 (ti/tv = 2.2862) 
+ 
+   Model = K80+I
+   partition = 010010
+   -lnL = 5974.9051
+   K = 24
+   kappa = 5.2365 (ti/tv = 2.6183)
+   p-inv = 0.3680 
+ 
+   Model = K80+G
+   partition = 010010
+   -lnL = 5950.8734
+   K = 24
+   kappa = 6.1854 (ti/tv = 3.0927)
+   gamma shape = 0.5610 
+ 
+   Model = K80+I+G
+   partition = 010010
+   -lnL = 5950.5768
+   K = 25
+   kappa = 6.1140 (ti/tv = 3.0570)
+   p-inv = 0.1540
+   gamma shape = 0.8750 
+ 
+   Model = HKY
+   partition = 010010
+   -lnL = 5981.7202
+   K = 26
+   freqA = 0.3139 
+   freqC = 0.2926 
+   freqG = 0.1040 
+   freqT = 0.2895 
+   kappa = 4.9866 (ti/tv = 2.4056) 
+ 
+   Model = HKY+I
+   partition = 010010
+   -lnL = 5768.0040
+   K = 27
+   freqA = 0.3504 
+   freqC = 0.3076 
+   freqG = 0.0901 
+   freqT = 0.2519 
+   kappa = 6.9928 (ti/tv = 3.0941)
+   p-inv = 0.3690 
+ 
+   Model = HKY+G
+   partition = 010010
+   -lnL = 5711.9391
+   K = 27
+   freqA = 0.3637 
+   freqC = 0.3199 
+   freqG = 0.0815 
+   freqT = 0.2349 
+   kappa = 12.7197 (ti/tv = 5.3962)
+   gamma shape = 0.3630 
+ 
+   Model = HKY+I+G
+   partition = 010010
+   -lnL = 5711.9389
+   K = 28
+   freqA = 0.3637 
+   freqC = 0.3199 
+   freqG = 0.0815 
+   freqT = 0.2349 
+   kappa = 12.7430 (ti/tv = 5.4061)
+   p-inv = 0.0000
+   gamma shape = 0.3630 
+ 
+   Model = SYM
+   partition = 012345
+   -lnL = 5989.3816
+   K = 27
+   R(a) [AC] =  27.2281
+   R(b) [AG] =  35.7668
+   R(c) [AT] =  13.5679
+   R(d) [CG] =  3.1053
+   R(e) [CT] =  84.2613
+   R(f) [GT] =  1.0000 
+ 
+   Model = SYM+I
+   partition = 012345
+   -lnL = 5844.3146
+   K = 28
+   R(a) [AC] =  24.2260
+   R(b) [AG] =  34.4350
+   R(c) [AT] =  12.6464
+   R(d) [CG] =  1.7459
+   R(e) [CT] =  88.4620
+   R(f) [GT] =  1.0000
+   p-inv = 0.3420 
+ 
+   Model = SYM+G
+   partition = 012345
+   -lnL = 5821.7572
+   K = 28
+   R(a) [AC] =  40.5186
+   R(b) [AG] =  56.8361
+   R(c) [AT] =  20.4509
+   R(d) [CG] =  2.8851
+   R(e) [CT] =  175.2927
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6320 
+ 
+   Model = SYM+I+G
+   partition = 012345
+   -lnL = 5820.7517
+   K = 29
+   R(a) [AC] =  38.6273
+   R(b) [AG] =  53.9068
+   R(c) [AT] =  19.4089
+   R(d) [CG] =  2.6923
+   R(e) [CT] =  164.7813
+   R(f) [GT] =  1.0000
+   p-inv = 0.1790
+   gamma shape = 1.1350 
+ 
+   Model = GTR
+   partition = 012345
+   -lnL = 5934.1469
+   K = 30
+   freqA = 0.3052 
+   freqC = 0.2696 
+   freqG = 0.1324 
+   freqT = 0.2928 
+   R(a) [AC] =  15.0863
+   R(b) [AG] =  34.6363
+   R(c) [AT] =  7.1855
+   R(d) [CG] =  3.5721
+   R(e) [CT] =  47.7161
+   R(f) [GT] =  1.0000 
+ 
+   Model = GTR+I
+   partition = 012345
+   -lnL = 5757.2159
+   K = 31
+   freqA = 0.3367 
+   freqC = 0.3074 
+   freqG = 0.0920 
+   freqT = 0.2639 
+   R(a) [AC] =  5.4361
+   R(b) [AG] =  30.8044
+   R(c) [AT] =  3.4699
+   R(d) [CG] =  2.3367
+   R(e) [CT] =  25.6343
+   R(f) [GT] =  1.0000
+   p-inv = 0.3730 
+ 
+   Model = GTR+G
+   partition = 012345
+   -lnL = 5708.9232
+   K = 31
+   freqA = 0.3550 
+   freqC = 0.3223 
+   freqG = 0.0801 
+   freqT = 0.2426 
+   R(a) [AC] =  3.6053
+   R(b) [AG] =  43.9123
+   R(c) [AT] =  3.0624
+   R(d) [CG] =  2.3750
+   R(e) [CT] =  34.9227
+   R(f) [GT] =  1.0000
+   gamma shape = 0.3690 
+ 
+   Model = GTR+I+G
+   partition = 012345
+   -lnL = 5708.9229
+   K = 32
+   freqA = 0.3549 
+   freqC = 0.3224 
+   freqG = 0.0800 
+   freqT = 0.2427 
+   R(a) [AC] =  3.5912
+   R(b) [AG] =  43.9457
+   R(c) [AT] =  3.0486
+   R(d) [CG] =  2.3627
+   R(e) [CT] =  34.8161
+   R(f) [GT] =  1.0000
+   p-inv = 0.0000
+   gamma shape = 0.3690 
+ 
+  Best-fit models should be reoptimized for comparison with unconstrained likelihood
+ 
+Computation of likelihood scores completed. It took 00h:00:46:02.
+ 
+
+
+
+---------------------------------------------------------------
+*                                                             *
+*             AKAIKE INFORMATION CRITERION (AIC)              *
+*                                                             *
+---------------------------------------------------------------
+ 
+ Model selected: 
+   Model = HKY+G
+   partition = 010010
+   -lnL = 5711.9391
+   K = 27
+   freqA = 0.3637 
+   freqC = 0.3199 
+   freqG = 0.0815 
+   freqT = 0.2349 
+   kappa = 12.7197 (ti/tv = 5.3962)
+   gamma shape = 0.3630 
+ 
+Tree for the best AIC model = (Tarsius_syrichta:0.59695762,Lemur_catta:0.40629365,(Saimiri_sciureus:0.52124673,((M_sylvanus:0.07547406,(M_fascicularis:0.05703477,(Macaca_fuscata:0.01614407,M_mulatta:0.02205797):0.03443332):0.04502246):0.29882422,(Hylobates:0.19049686,(Pongo:0.15944983,(Gorilla:0.05855745,(Pan:0.06120863,Homo_sapiens:0.05065865):0.02894996):0.08982189):0.05972982):0.14459561):0.13538506):0.32858455);
+ 
+ 
+* AIC MODEL SELECTION : Selection uncertainty
+ 
+Model             -lnL    K      AIC       delta       weight   cumWeight
+------------------------------------------------------------------------- 
+HKY+G       5711.93906   27  11477.878120   0.000000    0.532137   0.532137 
+GTR+G       5708.92325   31  11479.846500   1.968380    0.198882   0.731019 
+HKY+I+G     5711.93892   28  11479.877840   1.999720    0.195790   0.926809 
+GTR+I+G     5708.92289   32  11481.845780   3.967660    0.073191   1.000000 
+GTR+I       5757.21587   31  11576.431740  98.553620   2.12e-022   1.000000 
+HKY+I       5768.00400   27  11590.008000  112.129880   2.38e-025   1.000000 
+SYM+I+G     5820.75170   29  11699.503400  221.625280   3.99e-049   1.000000 
+SYM+G       5821.75725   28  11699.514500  221.636380   3.97e-049   1.000000 
+SYM+I       5844.31463   28  11744.629260  266.751140   6.34e-059   1.000000 
+GTR         5934.14693   30  11928.293860  450.415740   8.31e-099   1.000000 
+K80+G       5950.87341   24  11949.746820  471.868700   1.82e-103   1.000000 
+K80+I+G     5950.57675   25  11951.153500  473.275380   9.03e-104   1.000000 
+K80+I       5974.90513   24  11997.810260  519.932140   6.67e-114   1.000000 
+HKY         5981.72024   26  12015.440480  537.562360   9.90e-118   1.000000 
+SYM         5989.38158   27  12032.763160  554.885040   1.72e-121   1.000000 
+F81+I+G     6103.95517   27  12261.910340  784.032220   2.99e-171   1.000000 
+F81+G       6106.18487   26  12264.369740  786.491620   8.74e-172   1.000000 
+F81+I       6117.48059   26  12286.961180  809.083060   1.09e-176   1.000000 
+K80         6142.42909   23  12330.858180  852.980060   3.19e-186   1.000000 
+JC+I+G      6269.14837   24  12586.296740  1108.418620   0.00e+000   1.000000 
+JC+G        6272.46907   23  12590.938140  1113.060020   0.00e+000   1.000000 
+JC+I        6277.78977   23  12601.579540  1123.701420   0.00e+000   1.000000 
+F81         6285.14052   25  12620.281040  1142.402920   0.00e+000   1.000000 
+JC          6424.32507   22  12892.650140  1414.772020   0.00e+000   1.000000
+-------------------------------------------------------------------------
+-lnL:	negative log likelihod
+ K:	number of estimated parameters
+ AIC:	Akaike Information Criterion
+ delta:	AIC difference
+ weight:	AIC weight
+ cumWeight:	cumulative AIC weight
+ 
+ 
+* AIC MODEL SELECTION : Confidence interval
+ 
+There are 24 models in the 100% confidence interval: [ HKY+G GTR+G HKY+I+G GTR+I+G GTR+I HKY+I SYM+I+G SYM+G SYM+I GTR K80+G K80+I+G K80+I HKY SYM F81+I+G F81+G F81+I K80 JC+I+G JC+G JC+I F81 JC ] 
+ 
+ 
+* AIC MODEL SELECTION : Best Model's command line
+ 
+phyml  -i /var/folders/r6/s972wd4s3mj045zhxhtdjy840000gn/T/jmodeltest8064190495791571852.phy -d nt -n 1 -b 0 --run_id HKY+G -m 010010 -f m -c 4 -a e --no_memory_check -o tlr -s BEST
+ 
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*                    MODEL AVERAGED PHYLOGENY                 *
+*                                                             *
+---------------------------------------------------------------
+ 
+Selection criterion: . . . . AIC
+Confidence interval: . . . . 1.00
+Consensus type:. . . . . . . 50% majority rule
+ 
+ 
+Using 24 models in the 1.00 confidence interval = HKY+G GTR+G HKY+I+G GTR+I+G GTR+I HKY+I SYM+I+G SYM+G SYM+I GTR K80+G K80+I+G K80+I HKY SYM F81+I+G F81+G F81+I K80 JC+I+G JC+G JC+I F81 JC  
+ 
+Species in order:
+ 
+    1. Tarsius_syrichta
+    2. Lemur_catta
+    3. Saimiri_sciureus
+    4. M_sylvanus
+    5. M_fascicularis
+    6. Macaca_fuscata
+    7. M_mulatta
+    8. Hylobates
+    9. Pongo
+    10. Gorilla
+    11. Pan
+    12. Homo_sapiens
+ 
+Bipartitions included in the consensus tree
+ 
+    123456789111
+             012
+    ************ ( 1.0 )
+    --********** ( 1.0 )
+    ---********* ( 1.0 )
+    ---****----- ( 1.0 )
+    ----***----- ( 1.0 )
+    -----**----- ( 1.0 )
+    -------***** ( 1.0 )
+    --------**** ( 1.0 )
+    ---------*** ( 1.0 )
+    ----------** ( 1.0 )
+
+ 
+                                                                 +--12 Homo_sapiens
+                                                              +-16
+                                                              |  +---11 Pan
+                                                       +-----17
+                                                       |      +--10 Gorilla
+                                                  +---18
+                                                  |    +------------9 Pongo
+                                      +----------19
+                                      |           +---------------8 Hylobates
+                           +---------20
+                           |          |                              +--7 M_mulatta
+                           |          |                           +-13
+                           |          |                           |  +--6 Macaca_fuscata
+                           |          |                        +-14
+                           |          |                        |  +---5 M_fascicularis
+                           |          +-----------------------15
+                           |                                   +-----4 M_sylvanus
++-------------------------21
+|                          +-------------------------------------------3 Saimiri_sciureus
+|
++---------------------------------2 Lemur_catta
+|
++-------------------------------------------------1 Tarsius_syrichta
+
+ 
+(Tarsius_syrichta:0.5969576200,Lemur_catta:0.4062936500,(Saimiri_sciureus:0.5212467300,((M_sylvanus:0.0754740600,(M_fascicularis:0.0570347700,(Macaca_fuscata:0.0161440700,M_mulatta:0.0220579700):1.0000:0.0344333200):1.0000:0.0450224600):1.0000:0.2988242200,(Hylobates:0.1904968600,(Pongo:0.1594498300,(Gorilla:0.0585574500,(Pan:0.0612086300,Homo_sapiens:0.0506586500):1.0000:0.0289499600):1.0000:0.0898218900):1.0000:0.0597298200):1.0000:0.1445956100):1.0000:0.1353850600):1.0000:0.3285845500);
+ 
+Note: this tree is unrooted. Branch lengths are the expected number of substitutions per site. Labels next to parentheses represent phylogenetic uncertainty due to model selection (see documentation)
+
+
+
+---------------------------------------------------------------
+*                                                             *
+*             BAYESIAN INFORMATION CRITERION (BIC)            *
+*                                                             *
+---------------------------------------------------------------
+ 
+ Sample size: 898.0
+ 
+ Model selected: 
+   Model = HKY+G
+   partition = 010010
+   -lnL = 5711.9391
+   K = 27
+   freqA = 0.3637 
+   freqC = 0.3199 
+   freqG = 0.0815 
+   freqT = 0.2349 
+   kappa = 12.7197 (ti/tv = 5.3962)
+   gamma shape = 0.3630 
+ 
+Tree for the best BIC model = (Tarsius_syrichta:0.59695762,Lemur_catta:0.40629365,(Saimiri_sciureus:0.52124673,((M_sylvanus:0.07547406,(M_fascicularis:0.05703477,(Macaca_fuscata:0.01614407,M_mulatta:0.02205797):0.03443332):0.04502246):0.29882422,(Hylobates:0.19049686,(Pongo:0.15944983,(Gorilla:0.05855745,(Pan:0.06120863,Homo_sapiens:0.05065865):0.02894996):0.08982189):0.05972982):0.14459561):0.13538506):0.32858455);
+ 
+ 
+* BIC MODEL SELECTION : Selection uncertainty
+ 
+Model             -lnL    K      BIC       delta       weight   cumWeight
+------------------------------------------------------------------------- 
+HKY+G       5711.93906   27  11607.482712   0.000000    0.967678   0.967678 
+HKY+I+G     5711.93892   28  11614.282602   6.799890    0.032296   0.999975 
+GTR+G       5708.92325   31  11628.651772  21.169060   2.45e-005   0.999999 
+GTR+I+G     5708.92289   32  11635.451222  27.968510   8.17e-007   1.000000 
+HKY+I       5768.00400   27  11719.612592  112.129880   4.34e-025   1.000000 
+GTR+I       5757.21587   31  11725.237012  117.754300   2.60e-026   1.000000 
+SYM+G       5821.75725   28  11833.919262  226.436550   6.54e-050   1.000000 
+SYM+I+G     5820.75170   29  11838.708332  231.225620   5.97e-051   1.000000 
+SYM+I       5844.31463   28  11879.034022  271.551310   1.04e-059   1.000000 
+K80+G       5950.87341   24  12064.950902  457.468190   4.44e-100   1.000000 
+K80+I+G     5950.57675   25  12071.157752  463.675040   2.00e-101   1.000000 
+GTR         5934.14693   30  12072.298962  464.816250   1.13e-101   1.000000 
+K80+I       5974.90513   24  12113.014342  505.531630   1.63e-110   1.000000 
+HKY         5981.72024   26  12140.244902  532.762190   1.99e-116   1.000000 
+SYM         5989.38158   27  12162.367752  554.885040   3.12e-121   1.000000 
+F81+G       6106.18487   26  12389.174162  781.691450   1.75e-170   1.000000 
+F81+I+G     6103.95517   27  12391.514932  784.032220   5.44e-171   1.000000 
+F81+I       6117.48059   26  12411.765602  804.282890   2.18e-175   1.000000 
+K80         6142.42909   23  12441.262092  833.779380   8.57e-182   1.000000 
+JC+G        6272.46907   23  12701.342052  1093.859340   0.00e+000   1.000000 
+JC+I+G      6269.14837   24  12701.500822  1094.018110   0.00e+000   1.000000 
+JC+I        6277.78977   23  12711.983452  1104.500740   0.00e+000   1.000000 
+F81         6285.14052   25  12740.285292  1132.802580   0.00e+000   1.000000 
+JC          6424.32507   22  12998.253882  1390.771170   0.00e+000   1.000000
+-------------------------------------------------------------------------
+-lnL:	negative log likelihod
+K:	number of estimated parameters
+BIC:	Bayesian Information Criterion
+delta:	BIC difference
+weight:	BIC weight
+cumWeight:	cumulative BIC weight
+ 
+ 
+* BIC MODEL SELECTION : Confidence interval
+ 
+There are 24 models in the 100% confidence interval: [ HKY+G HKY+I+G GTR+G GTR+I+G HKY+I GTR+I SYM+G SYM+I+G SYM+I K80+G K80+I+G GTR K80+I HKY SYM F81+G F81+I+G F81+I K80 JC+G JC+I+G JC+I F81 JC ] 
+ 
+ 
+* BIC MODEL SELECTION : Best Model's command line
+ 
+phyml  -i /var/folders/r6/s972wd4s3mj045zhxhtdjy840000gn/T/jmodeltest8064190495791571852.phy -d nt -n 1 -b 0 --run_id HKY+G -m 010010 -f m -c 4 -a e --no_memory_check -o tlr -s BEST
+ 
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*                    MODEL AVERAGED PHYLOGENY                 *
+*                                                             *
+---------------------------------------------------------------
+ 
+Selection criterion: . . . . BIC
+Confidence interval: . . . . 1.00
+Consensus type:. . . . . . . 50% majority rule
+ 
+ 
+Using 24 models in the 1.00 confidence interval = HKY+G HKY+I+G GTR+G GTR+I+G HKY+I GTR+I SYM+G SYM+I+G SYM+I K80+G K80+I+G GTR K80+I HKY SYM F81+G F81+I+G F81+I K80 JC+G JC+I+G JC+I F81 JC  
+ 
+Species in order:
+ 
+    1. Tarsius_syrichta
+    2. Lemur_catta
+    3. Saimiri_sciureus
+    4. M_sylvanus
+    5. M_fascicularis
+    6. Macaca_fuscata
+    7. M_mulatta
+    8. Hylobates
+    9. Pongo
+    10. Gorilla
+    11. Pan
+    12. Homo_sapiens
+ 
+Bipartitions included in the consensus tree
+ 
+    123456789111
+             012
+    ************ ( 1.0 )
+    --********** ( 1.0 )
+    ---********* ( 1.0 )
+    ---****----- ( 1.0 )
+    ----***----- ( 1.0 )
+    -----**----- ( 1.0 )
+    -------***** ( 1.0 )
+    --------**** ( 1.0 )
+    ---------*** ( 1.0 )
+    ----------** ( 1.0 )
+
+ 
+                                                                 +--12 Homo_sapiens
+                                                              +-16
+                                                              |  +---11 Pan
+                                                       +-----17
+                                                       |      +--10 Gorilla
+                                                  +---18
+                                                  |    +------------9 Pongo
+                                      +----------19
+                                      |           +---------------8 Hylobates
+                           +---------20
+                           |          |                              +--7 M_mulatta
+                           |          |                           +-13
+                           |          |                           |  +--6 Macaca_fuscata
+                           |          |                        +-14
+                           |          |                        |  +---5 M_fascicularis
+                           |          +-----------------------15
+                           |                                   +-----4 M_sylvanus
++-------------------------21
+|                          +-------------------------------------------3 Saimiri_sciureus
+|
++---------------------------------2 Lemur_catta
+|
++-------------------------------------------------1 Tarsius_syrichta
+
+ 
+(Tarsius_syrichta:0.5969576200,Lemur_catta:0.4062936500,(Saimiri_sciureus:0.5212467300,((M_sylvanus:0.0754740600,(M_fascicularis:0.0570347700,(Macaca_fuscata:0.0161440700,M_mulatta:0.0220579700):1.0000:0.0344333200):1.0000:0.0450224600):1.0000:0.2988242200,(Hylobates:0.1904968600,(Pongo:0.1594498300,(Gorilla:0.0585574500,(Pan:0.0612086300,Homo_sapiens:0.0506586500):1.0000:0.0289499600):1.0000:0.0898218900):1.0000:0.0597298200):1.0000:0.1445956100):1.0000:0.1353850600):1.0000:0.3285845500);
+ 
+Note: this tree is unrooted. Branch lengths are the expected number of substitutions per site. Labels next to parentheses represent phylogenetic uncertainty due to model selection (see documentation)
+ 
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*                    SELECTION SUMMARY                        *
+*                                                             *
+---------------------------------------------------------------
+
+::Optimized Topologies Summary::
+
+There are 1 different topologies.
+
+Topology Id: 1
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  1	100.00%		  0	5.12e-01	5.29e-02
+BIC	  1	100.00%		  0	5.12e-01	5.29e-02
+Models supporting:   24
+                     JC JC+I JC+G JC+I+G F81 F81+I F81+G F81+I+G K80 K80+I K80+G K80+I+G HKY HKY+I HKY+G 
+                     HKY+I+G SYM SYM+I SYM+G SYM+I+G GTR GTR+I GTR+G GTR+I+G 
+
+ 
+ 
+ 
+::Best Models::
+ 
+	Model 		f(a) 	f(c) 	f(g) 	f(t) 	kappa 	titv 	Ra	Rb	Rc	Rd	Re	Rf	pInv 	gamma
+----------------------------------------------------------------------------------------------------------------------------------------
+AIC 	HKY+G		0.36	0.32	0.08	0.23	12.72	5.40	  1.000  12.720   1.000   1.000  12.720   1.000 N/A	   0.36
+BIC 	HKY+G		0.36	0.32	0.08	0.23	12.72	5.40	  1.000  12.720   1.000   1.000  12.720   1.000 N/A	   0.36
